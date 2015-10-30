@@ -14,10 +14,11 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ArrayList<Bitmap> bitmaps;
-    private SpriteAnimation animation = new SpriteAnimation(bitmaps, 60);
+    private ArrayList<Bitmap> bitmaps;//new here or in OnCreate?
+    private SpriteAnimation animation;
     private CustomView view;
 
+    //Auto-generated code
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         view = new CustomView(this);
 
+
         bitmaps = new ArrayList<Bitmap>();
 
         bitmaps.add(BitmapFactory.decodeResource(getResources(), R.drawable.sproutsmaller));
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         bitmaps.add(BitmapFactory.decodeResource(getResources(), R.drawable.sproutsmaller3));
         bitmaps.add(BitmapFactory.decodeResource(getResources(), R.drawable.sproutsmaller4));
 
-        animation = new SpriteAnimation(bitmaps, 60);
+        animation = new SpriteAnimation(bitmaps, 60); //animation needs full bitmaps (fixed error from yesterday)
         view.setAnimation(animation);
         setContentView(view);
 

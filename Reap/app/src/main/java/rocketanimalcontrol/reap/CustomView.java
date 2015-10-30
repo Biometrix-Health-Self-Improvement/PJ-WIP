@@ -1,8 +1,5 @@
 package rocketanimalcontrol.reap;
 
-/**
- * Created by JP on 10/28/2015.
- */
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -25,6 +22,7 @@ public class CustomView extends View{
         canvas.drawColor(Color.BLACK);
         canvas.drawBitmap(animation.getCurrentFrame(), 300, 200, new Paint());
         animation.update();
+        //NOT thread safe
         try {
             Thread.sleep(animation.animationTime());
         } catch (InterruptedException e) {

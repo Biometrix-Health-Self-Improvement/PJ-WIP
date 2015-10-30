@@ -1,8 +1,5 @@
 package rocketanimalcontrol.reap;
 
-/**
- * Created by JP on 10/28/2015.
- */
 import java.util.ArrayList;
 
 import android.graphics.Bitmap;
@@ -22,7 +19,7 @@ public class SpriteAnimation {
         this.bitmaps = bitmaps;
         currentFrame = bitmaps.get(0);
         currentFrameIndex = 0;
-        animationTime = 1000 / fps; //milliseconds
+        animationTime = 5000 / fps; //milliseconds
     }
 
     public void update(long delta) {

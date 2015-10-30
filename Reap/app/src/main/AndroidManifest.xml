@@ -9,8 +9,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <!--"rocketanimalcontrol.reap.MainActivity"-->
-        <activity android:name=".MainActivity"
+        <!--"rocketanimalcontrol.reap.MainActivity"--> <!--.MainActivity-->
+        <activity android:name="rocketanimalcontrol.reap.MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
