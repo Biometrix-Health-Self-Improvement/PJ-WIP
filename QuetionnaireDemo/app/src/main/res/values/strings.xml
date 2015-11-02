@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QuetionnaireDemo</string>
+    <string name="q1" id="q1">
+        "What's one thing that went well today?"
+    </string>
+
+    <string name="a1" id="a1">
+        " "
+    </string>
+
+    <string name="h1" id="h1">
+        "You got to use a great app!"
+    </string>
+
+    <string name="submitbutt" id="submitbutt">
+        "S U B M I T"
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_quest_answer">QuestAnswer</string>
+</resources>
